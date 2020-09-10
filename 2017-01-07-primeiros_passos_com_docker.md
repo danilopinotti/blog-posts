@@ -1,10 +1,12 @@
 # Primeiros passos com Docker
+![Docker logo](assets/docker-logo.png "Docker")
+
 O principal objetivo desta postagem não é aprofundar no funcionamento interno do Docker, quem sabe numa postagem futura, e sim nas definições básicas e nos passos iniciais para utilizá-lo.
 
 ## Sobre o Docker
-> "Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries - anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment."
+> "Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries -- anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment."
 
-> "Os contêineres do Docker envolvem um pedaço de software em um sistema de arquivos completo ao qual contém o necessário para executar: códigos, ferramentas do sistema, bibliotecas - qualquer coisa que possa ser instalado em um servidor. Isso garante que o software sempre será executado da mesma forma, independentemente do seu ambiente."
+> "Os contêineres do Docker envolvem um pedaço de software em um sistema de arquivos completo ao qual contém o necessário para executar: códigos, ferramentas do sistema, bibliotecas -- qualquer coisa que possa ser instalado em um servidor. Isso garante que o software sempre será executado da mesma forma, independentemente do seu ambiente."
 
 Em outras palavras, o Docker permite você criar ambientes isolados de seu sistema raiz, através do uso de contêineres, de forma que fiquem independentes.
 
@@ -75,10 +77,10 @@ $ docker run -ti --name <nome_container> <nome_imagem>
 ```
 Abaixo a explicação dos parâmetros do comando:
 
-* "-ti": Permite assumir o bash do contêiner logo após instanciá-lo
-* "-d": Usado no lugar do '-ti'. Instancia e inicia o contêiner em background
-* "--name <nome_container>": Permite dar um nome ao contêiner. Recomendável para que possa tratá-lo por um nome ao invés de seu ID sha1.
-* "<nome_imagem>": Imagem de base para o contêiner.
+* `-ti`: permite assumir o bash do contêiner logo após instanciá-lo
+* `-d`: Usado no lugar do '-ti'. instância e inicia o contêiner em background
+* `--name <nome_container>`: permite dar um nome ao contêiner. Recomendável para que possa tratá-lo por um nome ao invés de seu ID sha1.
+* `<nome_imagem>`: imagem de base para o contêiner.
 
 Exemplo de uso:
 ```
