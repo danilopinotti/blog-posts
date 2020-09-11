@@ -1,5 +1,5 @@
 # Primeiros passos com Docker
-![Docker logo](assets/docker-logo.png "Docker")
+![Docker logo](https://github.com/danilopinotti/blog-posts/raw/master/assets/docker-logo.png "Docker")
 
 O principal objetivo desta postagem não é aprofundar no funcionamento interno do Docker, quem sabe numa postagem futura, e sim nas definições básicas e nos passos iniciais para utilizá-lo.
 

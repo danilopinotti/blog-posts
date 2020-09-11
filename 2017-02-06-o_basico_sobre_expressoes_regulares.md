@@ -1,7 +1,7 @@
 # O Básico Sobre Expressões Regulares
 O que são? Pra que servem? Podem mesmo me ajudar?
 
-![Regex](assets/regex.jpeg "Expressões Regulares")
+![Regex](https://raw.githubusercontent.com/danilopinotti/blog-posts/master/assets/regex.jpeg "Expressões Regulares")
 
 ## O que são?
 
@@ -30,7 +30,7 @@ Um exemplo simples de expressão regular:
 
 A expressão acima foi escrita para “casar” com um CEP (código de endereçamento postal) onde possui 5 dígitos numéricos, um traço e logo após, mais 3 dígitos numéricos.
 
-![Exemplo de REGEX](assets/regex-1.png "Exemplo de regex")
+![Exemplo de REGEX](https://github.com/danilopinotti/blog-posts/raw/master/assets/regex-1.png "Exemplo de regex")
 
 ## Componentes básicos
 

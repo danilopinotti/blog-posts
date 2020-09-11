@@ -1,5 +1,5 @@
 # Aprenda a buscar comandos já executados de forma rápida em seu terminal (Linux e MacOS)
-![Busca no terminal](assets/terminal-search.png "Busca no terminal")
+![Busca no terminal](https://github.com/danilopinotti/blog-posts/raw/master/assets/terminal-search.png "Busca no terminal")
 
 É comum, para usuários que preferem utilizar o terminal para agilizar determinados processos, ter que digitar novamente algum comando que já foi executado.
 
