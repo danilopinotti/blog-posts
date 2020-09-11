@@ -146,8 +146,6 @@ $ docker rmi $(docker images -q)
 
 A maioria dos comandos apresentados nesta postagem possuem mais parâmetros que não foram abordados devida à complexidade que foi evitada. Em futuras postagens serão mostradas mais opções para utilização dos contêineres.
 
-Até a próxima ;)
-
 ## Referências
 [Blog pessoal de Ricardo Martins](https://www.ricardomartins.com.br/2014/09/11/docker-tutorial-mao-na-massa/)
 
