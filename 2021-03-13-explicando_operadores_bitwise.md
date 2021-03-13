@@ -32,20 +32,58 @@ Número decimal: 14
 Número 14 binário: 1110
 ```
 
-Neste momento, pretendo explicar somente o essencial sobre números binários para facilitar a compreensão deste artigo.
-
-### Conversão de números decimais para binários
-
-### Conversão de números binários para decimais
+Se você não sabe como fazer conversão de números decimais para binário, recomendo ler algum artigo sobre isso antes de prosseguir na leitura.
 
 ## Operadores
 A seguir explicarei cada um dos operadores mostrados na seção anterior e você verá que não é tão complicado como parece.
 
+Antes de prosseguirmos com a explicação, é necessário ter em mente que tudo tem a ver com **bits**, 0 e 1, logo, os operadores trabalham em cima de números binários.
+
 ### Operador & (bitwise AND)
+Este operador compara dois bits e retorna **1** se **ambos os bits forem 1**
+
+Exemplo:
+```php
+5 & 3  // 1
+
+// 5 em binário = 101
+// 3 em binário = 011
+
+  101   // 5
+& 011   // 3
+= 001   // 1
+```
+
 ### Operador | (bitwise OR)
-### Operador ~ (bitwise NOT)
+Este operador compara dois bits e retorna **1** se **um ou outro bit for 1**
+
+Exemplo:
+```php
+5 | 3  // 7
+
+// 5 em binário = 101
+// 3 em binário = 011
+
+  101   // 5
+| 011   // 3
+= 111   // 7
+```
 ### Operador ^ (bitwise XOR)
+Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**
+
+Exemplo:
+```php
+5 ^ 3  // 6
+
+// 5 em binário = 101
+// 3 em binário = 011
+
+  101   // 5
+^ 011   // 3
+= 110   // 6
+```
 ### Operador << (bitwise left shift)
 ### Operador >> (bitwise right shift)
 
 ## Conclusão
+Existem muitas utilidades para operadores Bitwise, algumas delas possibilita você ganhar desempenho em suas aplicações e reduzir o espaço de armazenamento de informações, como por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, consegue identificar se o usuário tem permissão de escrita, leitura e/ou execução.
