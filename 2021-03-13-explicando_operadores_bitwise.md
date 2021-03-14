@@ -1,10 +1,10 @@
-# Explicando operadores Bitwise
+# Explicando operações Bitwise
 ## Introdução
 Há tempos que eu tentava aprender operadores Bitwise, mas nunca consegui avançar nos estudos por não entende-los na sua **essência**.
 
 Existem várias utilidades para operadores Bitwise. Algumas delas possibilita você ganhar desempenho nas suas aplicações e reduzir o espaço de armazenamento de informações, como, por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, é possível identificar se o usuário tem permissão de escrita, leitura e/ou execução.
 
-Operadores Bitwise trabalham com **bits** (meio óbvio) e, quando vemos os seus retornos em números decimais, pode gerar confusões em nossas cabeças. Por exemplo:
+Operadores Bitwise trabalham com **bits** (pois é) e, quando vemos os seus retornos em números decimais, podemos gerar confusões em nossas cabeças. Por exemplo:
 ```php
 5 ^ 2   // 7
 10 & 3  // 2
@@ -46,12 +46,12 @@ Exemplo:
 ```php
 5 & 3  // 1
 
-// 5 em binário = 101
-// 3 em binário = 011
+// 5 (decimal) = 101 (binário)
+// 3 (decimal) = 011 (binário)
 
-  101   // 5
-& 011   // 3
-= 001   // 1
+  101   // (decimal 5)
+& 011   // (decimal 3)
+= 001   // (decimal 1)
 ```
 
 ### Operador "|" (bitwise OR)
@@ -61,12 +61,12 @@ Exemplo:
 ```php
 5 | 3  // 7
 
-// 5 em binário = 101
-// 3 em binário = 011
+// 5 (decimal) = 101 (binário)
+// 3 (decimal) = 011 (binário)
 
-  101   // 5
-| 011   // 3
-= 111   // 7
+  101   // (decimal 5)
+| 011   // (decimal 3)
+= 111   // (decimal 7)
 ```
 ### Operador "^" (bitwise XOR)
 Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**.
@@ -75,12 +75,12 @@ Exemplo:
 ```php
 5 ^ 3  // 6
 
-// 5 em binário = 101
-// 3 em binário = 011
+// 5 (decimal) = 101 (binário)
+// 3 (decimal) = 011 (binário)
 
-  101   // 5
-^ 011   // 3
-= 110   // 6
+  101   // (decimal 5)
+^ 011   // (decimal 3)
+= 110   // (decimal 6)
 ```
 ### Operador "<<" (bitwise left shift)
 Com este operador, o número que está à direita representa a **quantidade de zeros** que serão adicionados à **direita** do número que se encontra à esquerda do operador.
@@ -91,11 +91,11 @@ Exemplo:
 ```php
 5 << 3  // 40
 
-// 5 em binário = 101
+// 5 (decimal) = 101 (binário)
 
-   101      // 5
-<<    000   // adiciona-se 3 "zeros" à direita
- = 101000   // 40
+   101      // (decimal 5)
+<<    000   // são adicionados 3 "zeros" à direita
+ = 101000   // (decimal 40)
 ```
 
 ### Operador ">>" (bitwise right shift)
@@ -105,11 +105,11 @@ Exemplo:
 ```php
 14 >> 2  // 3
 
-// 14 em binário = 1110
+// 14 (decimal) = 1110 (binário)
 
-   1110  // 14
+   1110  // (decimal 14)
 >>       // são removidos 2 bits da direita para a esquerda
- =   11  // 3
+ =   11  // (decimal 3)
 ```
 
 ## Conclusão
