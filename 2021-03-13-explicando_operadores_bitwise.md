@@ -1,10 +1,10 @@
 # Explicando operadores Bitwise
 ## Introdução
-Há tempos que eu tentava aprender operadores Bitwise, mas nunca consegui avançar nos estudos por não entendê-los em sua **essência**.
+Há tempos que eu tentava aprender operadores Bitwise, mas nunca consegui avançar nos estudos por não entende-los na sua **essência**.
 
-Existem várias utilidades para operadores Bitwise. Algumas delas possibilita você ganhar desempenho em suas aplicações e reduzir o espaço de armazenamento de informações, como por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, é possível identificar se o usuário tem permissão de escrita, leitura e/ou execução.
+Existem várias utilidades para operadores Bitwise. Algumas delas possibilita você ganhar desempenho nas suas aplicações e reduzir o espaço de armazenamento de informações, como, por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, é possível identificar se o usuário tem permissão de escrita, leitura e/ou execução.
 
-Operadores Bitwise trabalham com **bits** (meio óbvio) e, quando vemos seus retornos em números decimais, pode gerar confusões em nossas cabeças. Por exemplo:
+Operadores Bitwise trabalham com **bits** (meio óbvio) e, quando vemos os seus retornos em números decimais, pode gerar confusões em nossas cabeças. Por exemplo:
 ```php
 5 ^ 2   // 7
 10 & 3  // 2
@@ -14,9 +14,9 @@ Operadores Bitwise trabalham com **bits** (meio óbvio) e, quando vemos seus ret
 8 >> 3  // 1
 ```
 
-**Atenção:** Os operadores bitwise são muito parecidos com os operadores condicionais das principais linguagens de programação, embora seu funcionamento seja um pouco diferente.
+**Atenção:** Os operadores bitwise são muito parecidos com os operadores condicionais das principais linguagens de programação, embora o seu funcionamento seja um pouco diferente.
 
-O objetivo deste artigo é explicar alguns dos principais operadores bitwise da forma em que eu finalmente consegui entendê-los, e mostrar o caminho que eu segui para conseguir esclarecê-los em minha mente.
+O objetivo deste artigo é explicar alguns dos principais operadores bitwise da forma em que finalmente consegui entender-los, e mostrar o caminho que eu segui para conseguir esclarecer-los na minha mente.
 
 ## Um pouco sobre bits e o sistema binário
 Antes de explicar como os operadores bitwise funcionam, é importante que você saiba como trabalhar com números na base 2, também conhecido como números binários.
@@ -32,10 +32,10 @@ Número decimal: 14
 Número 14 binário: 1110
 ```
 
-Se você não sabe como fazer conversão de números decimais para binários, recomendo ler um ou mais artigos sobre isso antes de prosseguir na leitura.
+Se não sabe como fazer conversão de números decimais para binários, recomendo ler um ou mais artigos sobre isso antes de prosseguir na leitura.
 
 ## Operadores
-A seguir, explicarei cada um dos operadores mostrados na seção anterior e você verá que não é tão complicado como parece.
+A seguir, explicarei cada um dos operadores mostrados na secção anterior e verá que não é tão complicado como parece.
 
 Antes de prosseguirmos com a explicação, é necessário ter em mente que tudo tem a ver com **bits**, 0 e 1, logo, os operadores trabalham em cima de números binários.
 
@@ -55,7 +55,7 @@ Exemplo:
 ```
 
 ### Operador "|" (bitwise OR)
-Este operador compara dois bits e retorna **1** se **um dos bits for 1**
+Este operador compara dois bits e retorna **1** se **um dos bits for 1**.
 
 Exemplo:
 ```php
@@ -69,7 +69,7 @@ Exemplo:
 = 111   // 7
 ```
 ### Operador "^" (bitwise XOR)
-Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**
+Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**.
 
 Exemplo:
 ```php
@@ -108,15 +108,15 @@ Exemplo:
 // 14 em binário = 1110
 
    1110  // 14
->>       // remove-se 2 bits da direita para a esquerda
+>>       // são removidos 2 bits da direita para a esquerda
  =   11  // 3
 ```
 
 ## Conclusão
-Dependendo de sua especialidade como desenvolvedor, raramente precisará utilizar operadores bitwise, porém, ter conhecimentos sobre assuntos variados e tópicos base da programação, aumentam seu "campo de visão" na hora de resolver problemas mais complexos.
+Dependendo da sua especialidade como programador, raramente precisará utilizar operadores bitwise, porém, ter conhecimentos sobre assuntos variados e tópicos base da programação, aumentam o seu “campo de visão” na hora de resolver problemas mais complexos.
 
-Espero que tenha te ajudado.
+Espero que este artigo tenha te ajudado de alguma maneira.
 
 Até a próxima ;)
 
-Encontrou algum erro e/ou quer contribuir com este artigo? Você pode submeter uma PR em seu [código fonte](https://github.com/danilopinotti/blog-posts/blob/master/2021-03-13-explicando_operadores_bitwise.md) no Github :)
+Encontrou algum erro e/ou quer contribuir com este artigo? Você pode submeter uma PR no seu [código fonte (Github)](https://github.com/danilopinotti/blog-posts/blob/master/2021-03-13-explicando_operadores_bitwise.md)  :)
