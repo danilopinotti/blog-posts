@@ -83,7 +83,34 @@ Exemplo:
 = 110   // 6
 ```
 ### Operador << (bitwise left shift)
+Com este operador, o número que está à direita representa a **quantidade de zeros** que serão adicionados à **direita** do número que se encontra à esquerda do operador.
+
+Em outras palavras, na operação `5 << 3`, este operador **"adiciona 3 zeros"** à direita do número **5 binário**.
+
+Exemplo:
+```php
+5 << 3  // 40
+
+// 5 em binário = 101
+
+   101      // 5
+<<    000   // adiciona-se 3 "zeros" à direita
+ = 101000   // 40
+```
+
 ### Operador >> (bitwise right shift)
+Neste operador, o número que está à direita representa a **quantidade de bits** que serão **removidos**, da direita para a esquerda, do número que se encontra à esquerda do operador.
+
+Exemplo:
+```php
+14 >> 2  // 3
+
+// 14 em binário = 1110
+
+   1110  // 14
+>>       // remove-se 2 bits da direita para a esquerda
+ =   11  // 3
+```
 
 ## Conclusão
 Existem muitas utilidades para operadores Bitwise, algumas delas possibilita você ganhar desempenho em suas aplicações e reduzir o espaço de armazenamento de informações, como por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, consegue identificar se o usuário tem permissão de escrita, leitura e/ou execução.
