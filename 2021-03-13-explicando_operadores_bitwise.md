@@ -64,9 +64,9 @@ Exemplo:
 // 5 (decimal) = 101 (binário)
 // 3 (decimal) = 011 (binário)
 
-  101   // (decimal 5)
-| 011   // (decimal 3)
-= 111   // (decimal 7)
+  101   // (5 decimal)
+| 011   // (3 decimal)
+= 111   // (7 decimal)
 ```
 ### Operador "^" (bitwise XOR)
 Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**.
@@ -78,9 +78,9 @@ Exemplo:
 // 5 (decimal) = 101 (binário)
 // 3 (decimal) = 011 (binário)
 
-  101   // (decimal 5)
-^ 011   // (decimal 3)
-= 110   // (decimal 6)
+  101   // (5 decimal)
+^ 011   // (3 decimal)
+= 110   // (6 decimal)
 ```
 ### Operador "<<" (bitwise left shift)
 Com este operador, o número que está à direita representa a **quantidade de zeros** que serão adicionados à **direita** do número que se encontra à esquerda do operador.
@@ -93,9 +93,9 @@ Exemplo:
 
 // 5 (decimal) = 101 (binário)
 
-   101      // (decimal 5)
+   101      // (5 decimal)
 <<    000   // são adicionados 3 "zeros" à direita
- = 101000   // (decimal 40)
+ = 101000   // (40 decimal)
 ```
 
 ### Operador ">>" (bitwise right shift)
@@ -107,9 +107,9 @@ Exemplo:
 
 // 14 (decimal) = 1110 (binário)
 
-   1110  // (decimal 14)
+   1110  // (14 decimal)
 >>       // são removidos 2 bits da direita para a esquerda
- =   11  // (decimal 3)
+ =   11  // (3 decimal)
 ```
 
 ## Conclusão
