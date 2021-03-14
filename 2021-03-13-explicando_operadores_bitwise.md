@@ -16,7 +16,7 @@ Operadores Bitwise trabalham com **bits** (pois é) e, quando vemos os seus reto
 
 **Atenção:** Os operadores bitwise são muito parecidos com os operadores condicionais das principais linguagens de programação, embora o seu funcionamento seja um pouco diferente.
 
-O objetivo deste artigo é explicar alguns dos principais operadores bitwise da forma em que finalmente consegui entender-los, e mostrar o caminho que eu segui para conseguir esclarecer-los na minha mente.
+O objetivo deste artigo é explicar alguns dos principais operadores bitwise da forma em que finalmente consegui entendê-los, e mostrar o caminho que eu segui para conseguir esclarecê-los na minha mente.
 
 ## Um pouco sobre bits e o sistema binário
 Antes de explicar como os operadores bitwise funcionam, é importante que você saiba como trabalhar com números na base 2, também conhecido como números binários.
@@ -32,10 +32,10 @@ Número decimal: 14
 Número 14 binário: 1110
 ```
 
-Se não sabe como fazer conversão de números decimais para binários, recomendo ler um ou mais artigos sobre isso antes de prosseguir na leitura.
+Se você não souber como fazer conversão de números decimais para binários, recomendo ler algum artigo sobre isso antes de prosseguir na leitura.
 
 ## Operadores
-A seguir, explicarei cada um dos operadores mostrados na secção anterior e verá que não é tão complicado como parece.
+A seguir, explicarei cada um dos operadores mostrados na seção anterior e verá que não é tão complicado como parece.
 
 Antes de prosseguirmos com a explicação, é necessário ter em mente que tudo tem a ver com **bits**, 0 e 1, logo, os operadores trabalham em cima de números binários.
 
