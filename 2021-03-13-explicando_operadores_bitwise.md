@@ -2,9 +2,9 @@
 ## Introdução
 Há tempos que eu tentava aprender operadores Bitwise, mas nunca consegui avançar nos estudos por não entendê-los em sua **essência**.
 
-> Os exemplos neste artigo foram feitos utilizando PHP, mas operadores Bitwise existem em praticamente qualquer linguagem de programação.
+Existem várias utilidades para operadores Bitwise. Algumas delas possibilita você ganhar desempenho em suas aplicações e reduzir o espaço de armazenamento de informações, como por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, é possível identificar se o usuário tem permissão de escrita, leitura e/ou execução.
 
-Operadores Bitwise trabalham com **bits** (nada mais óbvio) e, quando vemos seu retorno em números decimais, acabamo gerando bastante confusão. Por exemplo:
+Operadores Bitwise trabalham com **bits** (meio óbvio) e, quando vemos seus retornos em números decimais, pode gerar confusões em nossas cabeças. Por exemplo:
 ```php
 5 ^ 2   // 7
 10 & 3  // 2
@@ -16,12 +16,12 @@ Operadores Bitwise trabalham com **bits** (nada mais óbvio) e, quando vemos seu
 
 **Atenção:** Os operadores bitwise são muito parecidos com os operadores condicionais das principais linguagens de programação, embora seu funcionamento seja um pouco diferente.
 
-O objetivo deste artigo é explicar os principais operadores bitwise da forma em que eu finalmente consegui entendê-los e mostrar o caminho que eu segui para conseguir esclarecê-los em minha mente.
+O objetivo deste artigo é explicar alguns dos principais operadores bitwise da forma em que eu finalmente consegui entendê-los, e mostrar o caminho que eu segui para conseguir esclarecê-los em minha mente.
 
 ## Um pouco sobre bits e o sistema binário
-Antes de explicar como funcionam, é importante que você saiba como trabalhar com números na base 2, também conhecido como números binários.
+Antes de explicar como os operadores bitwise funcionam, é importante que você saiba como trabalhar com números na base 2, também conhecido como números binários.
 
-Um número com base 10 (decimal) significa que cada algarismo pode ir **de 0 até 9**, enquanto números binários, cada algarismo poderá ser **somente 0 ou 1**
+Um número com base 10 (decimal) significa que cada algarismo pode ir **de 0 até 9** (10 números), enquanto números binários, cada algarismo poderá ser **somente 0 ou 1**
 
 Por exemplo:
 ```
@@ -32,15 +32,15 @@ Número decimal: 14
 Número 14 binário: 1110
 ```
 
-Se você não sabe como fazer conversão de números decimais para binário, recomendo ler algum artigo sobre isso antes de prosseguir na leitura.
+Se você não sabe como fazer conversão de números decimais para binários, recomendo ler um ou mais artigos sobre isso antes de prosseguir na leitura.
 
 ## Operadores
-A seguir explicarei cada um dos operadores mostrados na seção anterior e você verá que não é tão complicado como parece.
+A seguir, explicarei cada um dos operadores mostrados na seção anterior e você verá que não é tão complicado como parece.
 
 Antes de prosseguirmos com a explicação, é necessário ter em mente que tudo tem a ver com **bits**, 0 e 1, logo, os operadores trabalham em cima de números binários.
 
-### Operador & (bitwise AND)
-Este operador compara dois bits e retorna **1** se **ambos os bits forem 1**
+### Operador "&" (bitwise AND)
+Este operador compara dois bits e retorna **1** se **ambos os bits comparados forem 1**.
 
 Exemplo:
 ```php
@@ -54,8 +54,8 @@ Exemplo:
 = 001   // 1
 ```
 
-### Operador | (bitwise OR)
-Este operador compara dois bits e retorna **1** se **um ou outro bit for 1**
+### Operador "|" (bitwise OR)
+Este operador compara dois bits e retorna **1** se **um dos bits for 1**
 
 Exemplo:
 ```php
@@ -68,7 +68,7 @@ Exemplo:
 | 011   // 3
 = 111   // 7
 ```
-### Operador ^ (bitwise XOR)
+### Operador "^" (bitwise XOR)
 Este operador compara dois bits e retorna **1** se **os bits comparados forem diferentes**
 
 Exemplo:
@@ -82,7 +82,7 @@ Exemplo:
 ^ 011   // 3
 = 110   // 6
 ```
-### Operador << (bitwise left shift)
+### Operador "<<" (bitwise left shift)
 Com este operador, o número que está à direita representa a **quantidade de zeros** que serão adicionados à **direita** do número que se encontra à esquerda do operador.
 
 Em outras palavras, na operação `5 << 3`, este operador **"adiciona 3 zeros"** à direita do número **5 binário**.
@@ -98,7 +98,7 @@ Exemplo:
  = 101000   // 40
 ```
 
-### Operador >> (bitwise right shift)
+### Operador ">>" (bitwise right shift)
 Neste operador, o número que está à direita representa a **quantidade de bits** que serão **removidos**, da direita para a esquerda, do número que se encontra à esquerda do operador.
 
 Exemplo:
@@ -113,4 +113,10 @@ Exemplo:
 ```
 
 ## Conclusão
-Existem muitas utilidades para operadores Bitwise, algumas delas possibilita você ganhar desempenho em suas aplicações e reduzir o espaço de armazenamento de informações, como por exemplo, permissões em sistemas Unix em que, com apenas **3 bits**, consegue identificar se o usuário tem permissão de escrita, leitura e/ou execução.
+Dependendo de sua especialidade como desenvolvedor, raramente precisará utilizar operadores bitwise, porém, ter conhecimentos sobre assuntos variados e tópicos base da programação, aumentam seu "campo de visão" na hora de resolver problemas mais complexos.
+
+Espero que tenha te ajudado.
+
+Até a próxima ;)
+
+Encontrou algum erro e/ou quer contribuir com este artigo? Você pode submeter uma PR em seu [código fonte](https://github.com/danilopinotti/blog-posts/blob/master/2021-03-13-explicando_operadores_bitwise.md) no Github :)
